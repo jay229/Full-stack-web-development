@@ -1,0 +1,41 @@
+body{
+    background-color: hotpink;
+
+}
+h1{
+    text-align: center;
+}
+p{
+    font-size: 1.2rem;
+
+}
+#para1{
+    background-color: yellowgreen;
+    /* display: none; It hides the contents of the element */
+
+    /* display: inline;
+    line-height: 25px; */
+    /* display: block; This is default property of p tag */
+    
+}
+#para2{
+    background-color: rgb(197, 78, 41);
+    line-height: 25px;
+}
+#para1>span{
+    background-color: teal;
+    /* display: inline-block; block inside line */
+   /* display: inline-block; */
+    line-height: 90px;
+    display: inline;
+}
+#sp1{
+    /* display:inherit inherits its parent display proerty*/
+    /* display: inherit; here it inherits its parent #para1 display property-display:block */
+    display: inherit;
+}
+#sp2{
+    /* display: inherit; */
+    
+
+}

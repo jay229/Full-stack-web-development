@@ -1,0 +1,61 @@
+<!-- Here we will learn all about css box model and box-sizing -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box model</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <img title="Box-sizing:border-box" src="../04_margin,padding/pup.jpg" alt=""id="img1">
+    <img title="Box-sizing:content-box" src="../04_margin,padding/pup.jpg" alt=""id="img2">
+  </body>
+</html>
+<!-- 
+    The box model allows us to add a border around elements, and to define space between elements. 
+
+    Width and Height of an Element
+In order to set the width and height of an element correctly in all browsers, we need to know how the box model works.
+
+This <div> element will have a total width of 350px:
+    Here is the calculation:
+        320px (width)
+        + 20px (left + right padding)
+        + 10px (left + right border)
+        + 0px (left + right margin)
+        = 350px
+
+         320px (Height)
+        + 20px (top + bottom padding)
+        + 10px (top + bottom border)
+        + 0px (top + bottom margin)
+        = 350px
+
+
+Total element width = width + left padding + right padding + left border + right border + left margin + right margin
+
+The total height of an element should be calculated like this:
+
+Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
+
+
+
+
+CSS box-sizing Property
+    The box-sizing property defines how the width and height of an element are calculated: should they include padding and borders, or not.
+
+    CSS Syntax
+        box-sizing: content-box|border-box|initial|inherit;
+
+content-box:Default. The width and height properties (and min/max properties) includes only the content. Border and padding are not included
+border-box:The width and height properties (and min/max properties) includes content, padding and border
+initial   :	Sets this property to its default value. Read about initial
+inherit	  :Inherits this property from its parent element.
+    
+
+
+-->

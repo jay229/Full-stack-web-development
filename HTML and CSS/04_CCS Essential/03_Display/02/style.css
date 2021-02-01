@@ -1,0 +1,24 @@
+div{
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    /* display: block; default display property of div */
+    /* display: inline-block; */
+    display: inline;
+}
+img{
+    width: 100px;
+    height: 100px;
+    /* display: inline-block; */
+    /* display: inline; default property of img element */
+    /* display: none; */
+}
+/* #pic1{
+    display: block;
+}
+#pic2{
+    display: inline-block;
+}
+#pic3{
+    display: inline;
+} */

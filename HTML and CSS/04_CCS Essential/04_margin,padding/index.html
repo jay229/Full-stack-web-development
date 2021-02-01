@@ -1,0 +1,66 @@
+<!-- Here we will talk about padding and margin -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin and padding</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border: 3px solid red;
+            display: inline-block;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            /* box-sizing: border-box; */
+        }
+        #img1{
+            border: 5px dotted red;
+            margin: 10px;
+            padding: 15px;
+        }
+        #img2{
+            border: 5px dashed red;
+            margin: 15px;
+            padding: 20px;
+        }
+        #img3{
+            border: 5px solid red;
+            margin: 20px;
+            padding: 25px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <img src="pup.jpg" alt=""id="img1">
+    <img src="pup.jpg" alt="" id="img2">
+    <img src="pup.jpg" alt="" id="img3">
+</body>
+</html>
+<!-- 
+    Padding property::
+    Distance between content and its border(see css box model.png).
+    padding :top right bottom left 
+
+    1>padding: 10px(top) 10px(right) 15px(bottom) 15px(left)
+    2>padding: 10px(top) 10px(right and left) 15px(bottom)
+    3>padding: 10px(top and bottom) 10px(right and left)
+    4>padding: 10px(top right bottom left)
+
+
+    
+    Margin property:
+    this is the space between this box of content and other boxes of content
+    1>Margin: 10px(top) 10px(right) 15px(bottom) 15px(left)
+    2>Margin: 10px(top) 10px(right and left) 15px(bottom)
+    3>Margin: 10px(top and bottom) 10px(right and left)
+    4>Margin: 10px(top right bottom left)
+ -->

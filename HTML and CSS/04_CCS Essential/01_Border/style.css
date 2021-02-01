@@ -1,0 +1,30 @@
+body{
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    border: 2px solid red;
+    width: 100px;
+    height: 100px;
+    margin: 4px 0px 4px 5px;
+    text-align: center;
+}
+img{
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+}
+#a{
+    border: 5px solid red;
+}
+#b{
+    border: 5px dashed red;
+}
+#c{
+    border: 5px dotted red;
+}
+#d{
+    border: 10px groove red;
+}

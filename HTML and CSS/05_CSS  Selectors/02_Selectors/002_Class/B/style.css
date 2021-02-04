@@ -1,0 +1,43 @@
+.top{
+    border: 2px solid gray;
+    background-color: indigo;
+    height: 5rem;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 2em;
+    color: whitesmoke;
+}
+.main{
+    border: 3px solid red;
+    height: 50vh;
+    background-color: silver;
+    margin-top: 3%;
+    text-align: center;
+    color: black;
+    font-size: xx-large;
+}
+.sec{
+    border: 4px solid green;
+    width: 80%;
+    height: 45vh;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: grey;
+}
+.art{
+    border: 5px solid rgb(228, 29, 72);
+    /* margin: 0 auto; */
+    margin: 10px;
+    width: 50%;
+    height: 30vh;
+}
+.foot{
+    border: 3px solid greenyellow;
+    background-color: lightseagreen;
+    margin-top: 10%;
+    height: 40vh;
+    text-align: center;
+    font-size: 2rem;
+
+}
+

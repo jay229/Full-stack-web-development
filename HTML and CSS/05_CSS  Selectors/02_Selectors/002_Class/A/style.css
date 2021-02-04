@@ -1,0 +1,19 @@
+/* Style for every element */
+*{
+    margin: 10px;
+    box-sizing: border-box;
+}
+.htm{
+    font-size: 18px;
+
+}
+.bd{
+    background-color: whitesmoke;
+}
+.head{
+    text-align: center;
+}
+.para{
+    border: 2px solid red;
+    padding: 8px;
+}

@@ -1,0 +1,12 @@
+[Contenteditable="True"]{
+    text-align: center;
+}
+a[href$=".com"]{
+   margin: 20px;
+    /* display: none; */
+    /* margin: 0 auto ; */
+}
+img[src$=".png"]{
+    width: 100px;
+    height: 100px;
+}

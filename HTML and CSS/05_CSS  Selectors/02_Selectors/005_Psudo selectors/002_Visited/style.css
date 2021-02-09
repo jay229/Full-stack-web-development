@@ -1,0 +1,22 @@
+div{
+    width: 50%;
+    height: 500px;
+    border: 10px solid green;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3rem;
+}
+/* order matters */
+/* Link Visited Hover Active */
+a:link{
+    color: greenyellow;
+}
+a:visited{
+    color: blue;
+}
+a:hover{
+    color: red;
+}
+a:active{
+    color: yellow;
+}

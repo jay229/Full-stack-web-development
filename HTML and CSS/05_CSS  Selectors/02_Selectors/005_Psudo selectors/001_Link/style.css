@@ -1,0 +1,21 @@
+div{
+    width: 50%;
+    height: 500px;
+    border: 10px solid green;
+    margin: 0 auto;
+    text-align: center;
+}
+/* Order:
+    lvha */
+a:link{
+    color: greenyellow;
+}
+a:visited{
+    color: blue;
+}
+a:hover{
+    color: yellow;
+}
+a:active{
+    color: tomato;
+}

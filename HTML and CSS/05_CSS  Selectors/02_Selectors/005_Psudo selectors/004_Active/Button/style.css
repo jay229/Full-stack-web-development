@@ -1,0 +1,53 @@
+html{
+    font-size: 1vw;
+}
+html,body,form,label,input{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid darkgray;
+    border-radius: 3px ;
+    padding: 20px;
+}
+label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input{
+    font-size: 4rem;
+    margin-top: 4px;
+    border: 1px solid darkgray;
+
+}
+[type="submit"]{
+    border: 1px solid darkgray;
+    margin-top: 10px;
+}
+
+
+[type="submit"]:hover{
+    background-color: darkgreen;
+    color: #ffff;
+}
+[type="submit"]:active{
+    background-color: rgb(192, 20, 120);
+    color: #ffff;
+}
+input:required{
+    background-color: rgb(226, 161, 161);
+}

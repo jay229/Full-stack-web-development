@@ -1,0 +1,7 @@
+a{
+    font-size: 4rem;
+
+}
+a:focus{
+    color: red;
+}

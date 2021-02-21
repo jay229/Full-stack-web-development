@@ -1,0 +1,14 @@
+button{
+    border: 5px solid red;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: royalblue;
+
+}
+button:focus{
+    background-color: yellow;
+}
+button:active{
+    background-color: green;
+}

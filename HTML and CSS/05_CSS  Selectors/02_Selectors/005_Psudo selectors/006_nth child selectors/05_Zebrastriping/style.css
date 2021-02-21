@@ -1,0 +1,10 @@
+div{
+    border: 2px solid gray;
+    height: 30px;
+}
+div:nth-child(even){
+    background-color: rgb(34, 32, 32);
+}
+div:nth-child(odd){
+    background-color: honeydew;
+}

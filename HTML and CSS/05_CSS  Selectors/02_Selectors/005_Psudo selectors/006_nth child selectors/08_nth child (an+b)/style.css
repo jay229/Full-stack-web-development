@@ -1,0 +1,6 @@
+ul{
+    text-decoration: none;
+}
+li:nth-child(2n+2){
+    color: red;
+}

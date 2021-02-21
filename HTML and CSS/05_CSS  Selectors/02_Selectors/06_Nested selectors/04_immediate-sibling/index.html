@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immediate sibling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- div>p*2+section>p -->
+    <p>Above the div</p>
+    <div>
+        <p>First</p>
+        <p>Second</p>
+        <section>
+            <p>Third</p>
+        </section>
+        <p>Just for check</p>
+    </div>
+    <p>Fourth</p>
+    <p>Fifth</p>
+</body>
+</html>
+<!-- 
+    div+p:	All p tags that are an immediate sibling following a div.
+ -->

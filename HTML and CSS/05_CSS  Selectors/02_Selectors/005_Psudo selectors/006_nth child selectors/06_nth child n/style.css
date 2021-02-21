@@ -1,0 +1,12 @@
+li:nth-child(3){
+    color: red;
+    list-style-type: disc;
+    /* font-size: 2rem; */
+}
+li{
+    font-size: 2rem;
+    
+}
+u{
+    text-decoration: none;
+}

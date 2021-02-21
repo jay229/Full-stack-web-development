@@ -1,0 +1,8 @@
+li:last-child{
+    color: red;
+    list-style-type: disc;
+    /* font-size: 2rem; */
+}
+li{
+    font-size: 2rem;
+}

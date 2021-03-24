@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#banner{
+    background:linear-gradient(rgba(77, 75, 75, 0.5),#07443d) ,url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.logo{
+    width: 100px;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+}
+.banner-text{
+    text-align: center;
+    color: #ffff;
+    padding-top: 120px;
+}
+.banner-text h1{
+    font-size: 120px;
+    font-family: 'Kaushan Script', cursive;
+}
+.banner-text p{
+   font-size: 20px;
+   font-style: italic;
+}
+.banner-btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 30px 10px;
+    padding: 12px 0;
+    color: #fff;
+    border: .5px solid #fff;
+    position: relative;
+    z-index: 1;
+}
+.banner-btn a span{
+    width: 0%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.banner-btn a:hover span{
+    width: 100%;
+    transition: 0.5s;
+   
+}
+.banner-btn a:hover{
+    color: black;
+}
+#sidenav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    background: #009688;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+#menubtn{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    text-align: center;
+    background: #009688;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menubtn img{
+    width: 20px;
+    margin-top: 15px;
+}

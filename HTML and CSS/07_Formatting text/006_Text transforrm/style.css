@@ -1,0 +1,26 @@
+
+div{
+    border: 5px solid red;
+    width: 50%;
+    box-sizing: border-box;
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+    /* font-weight: lighter; */
+    /* font-weight: bold; */
+    /* font-weight: bolder;
+    font-style: italic; */
+    /* font-variant: small-caps; */
+    /* text-transform:capitalize ; */
+    text-transform: lowercase;
+    
+    
+}
+#p1{
+    /* font-weight: bold;
+    font-style: oblique; */
+    /* font-variant-caps: titling-caps; */
+    text-transform: uppercase;

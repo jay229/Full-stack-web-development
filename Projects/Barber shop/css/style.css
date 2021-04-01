@@ -60,9 +60,10 @@
     height: 100vh;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -250px;
     z-index: 2;
     background: #009688;
+    transition: 0.5s;
 }
 
 nav ul li{
@@ -88,4 +89,71 @@ nav ul li a{
 #menubtn img{
     width: 20px;
     margin-top: 15px;
+}
+@media screen and (max-width:770px){
+    .banner-text h1{
+        font-size: 44px;
+        /* font-family: 'Kaushan Script', cursive; */
+    }
+    .banner-btn a{
+        display: block;
+        margin: 20px auto;
+    }
+
+}
+#feature{
+    width: 100%;
+    padding: 70px 0;
+    /* margin: 70px 0; */
+
+}
+.title-text{
+    text-align: center;
+    padding-bottom: 70px;
+    /* border: 3px solid red; */
+}
+.title-text p{
+    margin: auto;
+    font-size: 20px;
+    color: #009688;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.title-text p::after{
+    content: '';
+    width: 50%;
+    height: 35px;
+    background: linear-gradient(#019587,#fff);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+.title-text h1{
+    font-size: 50px;
+}
+.feature-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* align-content: center; */
+    text-align: center;
+    /* border: 3px solid red; */
+}
+.features{
+    flex-basis: 50%;
+}
+.features-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+.features-img img{
+    width: 70%;
 }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Airplane animation</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <nav>
+          <div class="logo">
+            <img src="img/images/logo.png" alt="" />
+          </div>
+          <div class="nav-link">
+            <ul>
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+          <div class="menu-icon">
+            <img src="img/images/menu.png" alt="" />
+          </div>
+        </nav>
+      </div>
+      <div class="content">
+        <div class="social-icon">
+          <img src="img/images/facebook.png" alt="" />
+          <img src="img/images/instagram.png" alt="" />
+          <img src="img/images/twitter.png" alt="" />
+          <img src="img/images/youtube.png" alt="" />
+        </div>
+        <div class="search">
+          <input type="text" placeholder="search" />
+          <img src="img/images/search.png" alt="" />
+        </div>
+      </div>
+      <div class="cloud">
+        <img src="img/images/cloud.png" alt="" id="cld" />
+        <img src="img/images/plane.png" alt="" id="airplane" />
+        <div id="hotairbaloon">
+          <img src="img/images/balloon.png" alt="" class="baloon1" />
+          <img src="img/images/balloon.png" alt="" class="baloon2" />
+          <img src="img/images/balloon.png" alt="" class="baloon3" />
+        </div>
+        <img src="img/images/pause.png" alt="" id="myImg" />
+      </div>
+    </div>
+    <script>
+      var myImg = document.getElementById("myImg");
+      myImg.onclick = function () {
+        if (cld.style.webkitAnimationPlayState == "paused") {
+          cld.style.webkitAnimationPlayState = "running";
+          airplane.style.webkitAnimationPlayState = "running";
+          hotairbaloon.style.webkitAnimationPlayState = "running";
+          myImg.src='img/images/pause.png';
+        } else {
+          cld.style.webkitAnimationPlayState ="paused";
+          airplane.style.webkitAnimationPlayState = "paused";
+          hotairbaloon.style.webkitAnimationPlayState = "paused";
+          myImg.src='img/images/play.png';
+        }
+      }
+    </script>
+  </body>
+</html>

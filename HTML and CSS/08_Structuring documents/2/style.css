@@ -1,0 +1,109 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    /* border: 3px solid red; */
+    background-color: #a39e9e;
+}
+#express{
+    position: absolute;
+    left: 40%;
+    margin-top: 20px;
+}
+figcaption{
+    position: absolute;
+    left: 48%;
+    margin-top: 60px;
+    font-weight: bold;
+}
+#follow{
+    display: inline-block;
+    margin-top: 50px;
+    /* border: 3px solid red; */
+
+}
+.social-media{
+    width: 40px;
+    height: 40px;
+}
+#follow p{
+    margin-left: 10px;
+    font-style:italic ;
+    font-weight:bold ;
+}
+nav{
+    /* border: 3px solid red; */
+    background-color: black;
+    height: 40px;
+    position: sticky;
+    /* top: 0; */
+}
+ ul{
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: center;
+     list-style: none;
+     font-weight: bold;
+     
+    }
+    a{
+        margin:15px  ;
+        color: white;
+        text-decoration: none;
+    }
+    li{
+        margin-top: 8px;
+
+    }
+    /* .navbar ul li::after{
+        content: '';
+        height: 3px;
+        width: 0;
+        background: #ffc107;
+        position: absolute;
+        left: 0;
+        top: 10px;
+        transition: 090ms;
+    }
+    .navbar ul li:hover::after{
+        width: 100%;
+    } */
+    aside{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        margin-top: 25px;
+    }
+
+   #ad1{
+      
+       margin-left: 80px;
+   }
+   #ad{
+    width: max-content;
+    height: 200px;
+   }
+   #ad2{
+    margin-right: 80px;
+   }
+   .art1{
+      display: flex;
+      position: absolute;
+      top: 70%;
+      left: 17%;
+
+   }
+   #art1img{
+       width: 300px;
+       height: 200px;
+       display: inline-block;
+   }
+   #art1para{
+       display: inline-block;
+   }
+   #art1para p{
+       max-width: 550px;
+   }

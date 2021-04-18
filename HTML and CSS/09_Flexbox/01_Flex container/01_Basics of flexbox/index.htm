@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .parent{
+            display: flex;
+            height: 300px;
+            border: 3px solid red;
+            background:grey;
+        }
+        .child{
+            width: 200px;
+            height: 200px;
+            border: 3px solid blue;
+            margin: 20px auto;
+        }
+        #child{
+            background-color: blueviolet;
+        }
+        #child2{
+            background-color: green;
+        }
+        #child3{
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div id="child" class="child"></div>
+        <div id="child2" class="child"></div>
+        <div id="child3" class="child"></div>
+    </div>
+</body>
+</html>

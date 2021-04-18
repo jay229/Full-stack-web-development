@@ -1,0 +1,61 @@
+<!-- Flex-flow:-It is used to shorthand  for flex-direction and flex-wrap property
+    flex-flow:row wrap;
+    flex-flow:row no-wrap;
+    flex-flow:row wrap-reverse;
+
+
+    flex-flow:column wrap;
+    flex-flow:column no-wrap;
+    flex-flow:column wrap-reverse;
+
+    
+
+
+
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex flow</title>
+    <style>
+        .parent{
+            height: 100vh;
+            display: flex;
+            background-color: grey;
+            /* flex-flow: row wrap; */
+            /* flex-flow:row no-wrap; */
+            /* flex-flow:row wrap-reverse; */
+            /* flex-flow:column wrap; */
+            /* flex-flow:column no-wrap; */
+            flex-flow:column wrap-reverse;
+
+
+        }
+        .child{
+            width: 200px;
+            height: 200px;
+            border: 3px solid blueviolet;
+            margin: 10px 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logical operator</title>
+  </head>
+  <body>
+    <script>
+      let a = 10,
+        b = 5,
+        c = 12;
+
+      // Logical &&
+      document.write(a > b && (a > c) + "<br>");
+      document.write(a > b && (a < c) + "<br>");
+
+      // Logical ||
+      document.writeln(a > b || (a > c) + "<br>");
+
+      document.writeln(a > b || (a < c) + "<br>");
+
+      // Logical not
+      document.writeln(!(a>b));
+    </script>
+  </body>
+</html>

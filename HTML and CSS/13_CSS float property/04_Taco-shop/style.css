@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    max-width: 900px;
+    margin: 20px auto;
+    border: 1px solid red;
+    overflow: auto;
+    height: 400px;
+   
+}
+ul li{
+    list-style: none;
+}
+nav,main{
+    border: 2px solid black;
+    box-sizing: border-box;
+    /* margin: 10px; */
+}
+nav{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+main{
+    float: right;
+    width: 75%;
+}

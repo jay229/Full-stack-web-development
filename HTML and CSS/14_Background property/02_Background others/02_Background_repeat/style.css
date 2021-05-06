@@ -1,0 +1,6 @@
+body{
+    background-image: url(../Img/beach.jpg);
+    height:200vh;
+    /* background-repeat: no-repeat/repeat/repeat-x/repeat-y; */
+    background-repeat: no-repeat;
+}

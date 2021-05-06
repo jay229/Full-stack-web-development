@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+BODY{
+     display: flex;   
+     justify-content: center;
+     align-items: center;
+     background-color: red;
+     height: 100vh;
+}
+h1{
+    font-size: 20rem;
+    color: #ffff;
+}

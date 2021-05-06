@@ -1,0 +1,125 @@
+body{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    border: 3px solid red;
+}
+.items{
+    width: 100%;
+    min-height: 100px;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat ;
+    
+}
+#item1{
+    /* background-color: red; */
+    background: url(../img/web.jpeg);
+
+
+}
+#item2{
+    /* background-color: rgb(198, 201, 26); */
+    background: url(../img/web2.jfif);
+
+}
+#item3{
+    /* background-color: rgb(65, 192, 39); */
+    background: url(../img/web3.jpg);
+
+}
+#item4{
+    /* background-color: rgb(21, 126, 187); */
+    background: url(../img/web4.jpg);
+
+}
+#item5{
+    /* background-color: rgb(47, 0, 255); */
+    background: url(../img/web5.jfif);
+
+}
+#item6{
+    /* background-color: rgb(129, 14, 81); */
+    background: url(../img/web6.jfif);
+}
+#item7{
+    /* background-color: rgb(29, 9, 9); */
+    background: url(../img/web7.png);
+
+}
+
+@media(min-width:600px){
+    #item2{
+        /* background-color: rgb(198, 201, 26); */
+        width: 33%;
+        order: 3;
+    
+    }
+    #item3{
+        /* background-color: rgb(65, 192, 39); */
+        width: 33%;
+        order: 2;
+    
+    }
+    #item4{
+        /* background-color: rgb(21, 126, 187); */
+        width: 34%;
+    
+    }
+    #item5{
+        /* background-color: rgb(47, 0, 255); */
+        width: 33%;
+    
+    }
+    #item6{
+        /* background-color: rgb(129, 14, 81); */
+        width: 33%;
+    
+    }
+    #item7{
+        /* background-color: rgb(29, 9, 9); */
+        width: 34%;
+    
+    }
+}
+@media(min-width:800px)
+{
+    #item1{
+        width: 60%;
+        order: 1;
+    }
+    #item2{
+        /* background-color: rgb(198, 201, 26); */
+        width: 40%;
+        order: 2;
+    
+    }
+    #item3{
+        /* background-color: rgb(65, 192, 39); */
+        width: 33%;
+        order: 3;
+    }
+    #item4{
+        /* background-color: rgb(21, 126, 187); */
+        width: 33%;
+        order: 4;
+    }
+    #item5{
+        /* background-color: rgb(47, 0, 255); */
+        width: 34%;
+        order: 5;
+    }
+    #item6{
+        /* background-color: rgb(129, 14, 81); */
+        width: 60%;
+        order: 6;
+    }
+    #item7{
+        /* background-color: rgb(29, 9, 9); */
+        width: 40%;
+        order: 7;
+    }
+}

@@ -1,0 +1,7 @@
+body{
+    background-image: url(../Img/beach.jpg);
+    height:200vh;
+    background-repeat: no-repeat;
+    /* background-size: auto/contain/cover; */
+    background-size: cover;
+}

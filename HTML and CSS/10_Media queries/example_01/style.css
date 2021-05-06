@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(107, 95, 95);
+}
+header{
+    border: 8px solid red;
+    background-color: grey;
+}
+header h1{
+   text-align: center;
+}
+nav{
+    border: 5px solid hotpink;
+    margin: 10px;
+    background-color: black;
+}
+nav ul{
+    display: flex;
+    /* margin: 10px; */
+    justify-content: space-evenly;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+nav ul li {
+    list-style: none;
+}
+main{
+    border: 10px solid yellow;
+    margin: 20px 5px 15px 10px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+footer{
+    border: 10px solid hotpink;
+    text-align: center;
+    font-size: 2rem;
+}

@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    width: 200px;
+    height: 200px;
+    border: 2px solid gold;
+    background-color: tomato;
+    float: left;
+}
+section{
+    border: 2px solid blue;
+    clear: left;
+}

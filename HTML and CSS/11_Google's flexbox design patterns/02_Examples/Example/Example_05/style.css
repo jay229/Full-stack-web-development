@@ -1,0 +1,24 @@
+body{
+    font-weight: bold;
+}
+header,aside,article,footer{
+    text-align: center;
+    padding: 10px;
+}
+header{
+    background-color: tomato;
+}
+aside:nth-child(3){
+    background-color: gold;
+}
+article{
+    text-align: left;
+    background-color: skyblue;
+    /* font-size: 1rem; */
+}
+aside:nth-child(4){
+    background-color: hotpink;
+}
+footer{
+    background-color: lightgreen;
+}

@@ -1,0 +1,28 @@
+@media screen and (max-width:900px) {
+    
+    body{
+        background-color: rgb(131, 59, 59);
+    }
+    header{
+        border: 5px solid red;
+        background-color: rgb(255, 255, 255);
+    }
+    header h1{
+        text-align: center;
+        font-weight: bolder;
+     }
+     nav{
+        border: 5px solid hotpink;
+        margin: 10px;
+        background-color: rgb(100, 41, 41);
+    }
+    nav ul{
+        display: flex;
+        /* margin: 10px; */
+        /* justify-content: space-evenly; */
+        flex-flow: column wrap;
+        align-items: center;
+    }
+}
+
+

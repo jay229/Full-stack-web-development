@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    background-image: url(../Img/paradise-island.jpg);
+    background-size: cover;
+    background-position: bottom;
+    /* background-attachment: scroll/fixed; */
+    background-attachment: fixed;
+}

@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+
+}
+.cl1,.cl2,.cl3,.cl4{
+    width: 100%;
+    min-height: 150px;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+.cl1{
+    background-color: rgb(11, 6, 53);
+}
+.cl2{
+    /* background-color: blue; */
+    border: 3px solid red;
+}
+.cl3{
+    background-color: blue;
+}
+.cl4{
+    background-color: rgb(9, 107, 33);
+}
+@media(min-width:600px)
+{
+    .cl1{
+        width: 25%;
+        /* height: auto; */
+    }
+    .cl2{
+        width: 74%;
+    }
+}
+@MEDIA(min-width:800px){
+    body{
+        width: 800px;
+        margin-left: auto;
+    margin-right: auto;
+    }
+}

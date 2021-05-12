@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(240, 214, 176);
+}
+.head{
+    height: 80vh;
+    /* width: 80%; */
+    /* margin: 0 auto; */
+    background-color: black;
+    background-image: url(../img/iron\ man.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    color: #fff;
+    /* display: flex; */
+}
+/* .head span{
+    font-size: 2rem;
+    font-size: 900;
+    margin-left: 50px;
+} */
+span{
+    font-size: 2rem;
+    margin-left: 1.4rem;
+    margin-top: 10px;
+}
+nav{
+    /* border: 3px solid white; */
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    height: 50px;
+    
+}
+ul{
+    display: flex;
+    justify-content: end;
+}
+li{
+    list-style: none;
+    margin-left: 8rem;
+    margin-top: 10px;
+    margin-right: 5rem;
+    cursor: pointer;
+}
+.text{
+    position: relative;
+    top: 10rem;
+    font-size: 2rem;
+    width: 33%;
+}
+li:hover{
+    color: tomato;
+}
+.profile{
+    display: flex;
+    flex-flow:column wrap ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    /* height: 30vh; */
+}
+.profile h1{
+    font-size: 3rem;
+    line-height: 5rem;
+}
+/* .img{
+    border: 2px solid red;
+
+} */
+.img img{
+    width: 50vw;
+    height: 50vh;
+    margin-left: 25%;
+    /* padding: 30px; */
+    box-sizing: border-box;
+    
+}
+.img p{
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 30px;
+    text-align: justify;
+}
+#flyman{
+    /* margin-right: 20%; */
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+#flyman p{
+    /* padding-left: 20px; */
+    /* border: 3px solid red; */
+    /* margin-left: 50%; */
+    margin-left: 25%;
+}
+footer{
+    background-color: black;
+    color: #ffff    ;
+    /* margin: 20px auto; */
+    display: flex;
+    justify-content: center;
+}

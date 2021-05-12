@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    height: max-content;
+    border: 6px solid black;
+    margin: 20px;
+}
+.camera i{
+    display: block;
+}

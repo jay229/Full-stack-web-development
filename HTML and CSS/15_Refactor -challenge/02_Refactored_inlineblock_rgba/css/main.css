@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../pic/fog.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+header h1{
+    color: #094562;
+    text-align: center;
+    font-size: 4.3rem;
+    word-spacing: 10px;
+}
+nav{
+    text-align: center;
+    font-size: 2rem;
+    color: whitesmoke;
+}
+nav ul li{
+    display: inline-block;
+    margin: 40px;
+}
+li:hover{
+    color: rgb(228, 76, 50);
+    /* font-size: 2.3rem; */
+
+}
+/* main{
+    border: 3px solid red;
+} */
+section{
+    height: 200px;
+    /* color: rgb(24, 51, 170); */
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 28px;
+    
+}
+#sec1{
+    background-color: rgb(54, 255, 153,0.25);
+}
+#sec2{
+    background-color: rgb(78, 110, 255,0.25);
+}
+#sec3{
+    background-color: rgb(255, 141, 197,0.25);
+}
+#sec4{
+    background-color: rgb(129, 200, 159,0.25);
+}
+

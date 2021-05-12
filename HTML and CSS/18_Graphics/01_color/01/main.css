@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: yellow; */
+}
+div{
+    width: 33%;
+    height: 200px;
+    border: 2px solid black;
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+   padding: 80px;
+   font-size: 1.3rem;
+}
+#s01{
+    background-color: blue;
+}
+#s02{
+    background-color: rgb(0, 0, 255);
+}
+#s03{
+    background-color: rgba(0, 0, 255, .5);
+}
+#s04{
+    background-color: #0000ff;
+}
+#s05{
+    background-color: hsl(240, 100%, 50%);
+}
+#s06{
+    background-color: hsla(240, 100%, 50%,.5);
+}

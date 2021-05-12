@@ -1,0 +1,11 @@
+div{
+    margin: 50px auto;
+    border: 3px solid red;
+    height: 60px ;
+    text-align: center;
+    font-size: 1.2rem;
+
+}
+span{
+    vertical-align: 20px;
+}

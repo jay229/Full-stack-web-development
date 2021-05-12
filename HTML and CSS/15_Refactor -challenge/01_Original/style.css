@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100%;
+    background: url(../Img/fog.jpg)  no-repeat  center fixed ;
+}
+.header{
+    margin: 10px auto;
+    /* border: 3px solid red; */
+    text-align: center;
+    color: rgb(26, 34, 151);
+}
+.nav{
+    /* border: 2px solid black ; */
+    margin-left: 30px;
+}
+.box1,.box2,.box3,.box4{
+    width: 100%;
+    height: 250px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 20px;
+}
+.box1{
+    background-color: blueviolet;
+}
+.box2{
+    background-color: rgb(14, 66, 177);
+}
+.box3{
+    background-color: rgb(12, 119, 110);
+}
+.box4{
+    background-color: rgb(124, 131, 22);
+}
+

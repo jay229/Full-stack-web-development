@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    border: 3px solid red;
+    margin: 40px 0 30px 0;
+}
+h1{
+    justify-self: center;
+    align-self: center;
+}
+.base{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    border: 2px solid red;
+    background-color: rosybrown;
+    margin: 30px;
+
+}
+.rotate{
+    width: 150px;
+    height: 150px;
+    background-color: pink;
+    text-align: center;
+    line-height: 150px;
+    transition:  1s;
+}
+#rx:hover{
+    /* transform: rotateX(60deg); */
+    transform:  perspective(600px) rotateX(180deg);
+    /* transform: perspective(300px); */
+
+}
+#ry:hover{
+    /* transform: rotateX(60deg); */
+    transform:perspective(600px) rotateY(180deg);
+
+}
+#rz:hover{
+    /* transform: rotateX(60deg); */
+    transform: rotateZ(90deg);
+
+}
+#r3d:hover{
+    /* transform: rotateX(60deg); */
+    /* rotate3D(x axis,y axis,z axis,degree) */
+    transform: rotate3d(2,2,3,90deg);
+
+}
+
+#sclz{
+   transform: perspective(800px) scaleZ(5) rotateX(60deg);
+}
+#scl3d{
+   
+    /* transform: scale(2,2); */
+    transform:perspective(800px) scale3d(1,1,2) rotateX(60deg);
+}
+#tr:hover{
+   
+    /* transform: scale(2,2); */
+    transform:perspective(800px) translateZ(400px) rotateY(-60deg);
+}
+#tr3d{
+   
+    /* transform: scale(2,2); */
+    transform:perspective(800px) translate3D(40px,10px,300px) rotateY(-60deg);
+}
+

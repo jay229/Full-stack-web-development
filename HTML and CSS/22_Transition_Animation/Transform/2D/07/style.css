@@ -1,0 +1,12 @@
+.card{
+    width: 150px;
+    height: 100px;
+    background-color: tomato;
+    transform: scale(1,1);
+    transition: 1s;
+    margin: 10px auto;
+}
+.card:hover{
+    transform: scale(1.1,1.1);
+    
+}

@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 50vh;
+  background-color: snow;
+  border: 2px solid red;
+}
+.jump {
+  width: 10vw;
+  /* min-width: 10vw; */
+  height: 30px;
+  margin: 20px;
+  border: 2px solid green;
+  text-align: center;
+  background-color: red;
+  font-size: 1.2rem;
+  color: #fff;
+  transition-property: all;
+  transition-duration: 2s;
+  /* transition-timing-function:; */
+}
+/* .ease:hover{
+} */
+#jump-start{
+  /*  increases in velocity towards the middle of the transition, slowing back down at the end. */
+  transition-timing-function:steps(5,jump-start);
+}
+#jump-start:hover {
+  width: 100vw;
+  background-color: yellow;
+}
+#jump-end {
+  /*  starts off slowly, with the transition speed increasing until complete. */
+  transition-timing-function: steps(5,jump-end);
+}
+#jump-end:hover {
+  width: 100vw;
+  background-color: yellow;
+}
+#jump-none {
+  /* starts transitioning quickly, slowing down the transition continues. • */
+  transition-timing-function: steps(5,jump-none);
+}
+#jump-none:hover {
+  width: 100vw;
+  background-color: yellow;
+}
+#jump-both {
+  /*  starts transitioning slowly, speeds up, and then slows down again. */
+  transition-timing-function:steps(5,jump-both) ;
+}
+#jump-both:hover {
+  width: 100vw;
+  background-color: yellow;
+}
+#step-start {
+  /* transitions at an even speed. */
+  transition-timing-function: steps(5,step-start);
+}
+#step-start:hover {
+  width: 100vw;
+  background-color: yellow;
+}
+#step-end {
+  /* transitions at an even speed. */
+  transition-timing-function: step(5,step-end);
+}
+#step-end:hover {
+  width: 100vw;
+  background-color: yellow;
+}
+

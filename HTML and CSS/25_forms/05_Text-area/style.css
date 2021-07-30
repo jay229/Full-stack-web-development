@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 3vw;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    border: 10px groove greenyellow;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+form,input,textarea{
+    font-size: 1rem;
+}
+div{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: .4rem;
+}
+label{
+    margin-right: .4rem;
+}
+input,textarea{
+    width: 12rem;
+    border: 1px solid lightgray;
+}
+#frmsubmit{
+    /* display: flex; */
+    justify-content: flex-end;
+}
+#sub{
+    border: 1px solid blue;
+    font-size: .7rem;
+}
+#sub:hover{
+    background-color: green;
+    transition-property: background-color;
+    transition-duration: 2s;
+}

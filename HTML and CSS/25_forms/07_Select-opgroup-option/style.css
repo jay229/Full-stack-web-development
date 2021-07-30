@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 3vw;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    border: 10px groove greenyellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+label{
+    font-size: .6rem;
+}
+#day{
+    margin-top: .5rem;
+}
+div{
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .5rem;
+}
+#sub{
+    font-size: .5rem;
+    padding: 5px 30px;
+    border: 1px solid blue;
+    border-radius: 10px;
+}

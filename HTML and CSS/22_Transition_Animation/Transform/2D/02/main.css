@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    width: 200px;
+    height: 150px;
+    background-color: tomato;
+    /* transform: rotate(60deg); */
+    /* transform: skewX(60deg); */
+    /* transform: skewY(60deg); */
+    transform: skew(30deg,30deg);
+    /* transform: skew(-30deg,-30deg); */
+    /* transform-origin: bottom; */
+    font-weight: 900;
+    text-align: center;
+}

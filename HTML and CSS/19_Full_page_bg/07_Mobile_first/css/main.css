@@ -1,0 +1,139 @@
+html{
+    font-family: 'Cantarell', sans-serif;
+    color: whitesmoke;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    height: 2.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+header div,header nav{
+    width: 100%;
+    height: 80%;
+    /* margin: 0 1rem; */
+    /* background-color: red; */
+    display: flex;
+    /* border: 2px solid hotpink; */
+}
+
+
+header nav,header  svg{
+    justify-content: space-between;
+    display: none;
+}
+
+
+.idx-hdr-svg:hover{
+    fill: khaki;
+    background-color: rgb(95, 95, 92);
+}
+#head:hover{
+    /* border: 2px solid red; */
+    color: khaki;
+   
+}
+#head{
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+    /* width: 100%; */
+}
+#head h1{
+    font-size: 1.2rem;
+    /* position: fixed;
+    left: 60px; */
+    text-align: center;
+    align-self: center;
+}
+/* #head h1:hover{
+    color: khaki;
+} */
+
+#idx-atf{
+    /* layout */
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    /* Background */
+    background-color: #5b5b5b;
+    background-image: url(../img/background-photo.jpg);
+    background-size: cover;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#idx-atf>div{
+    height: 85vh;
+}
+.idx-center-spacebetween{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.idx-center-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}   
+  h1{
+    /* color: #fff; */
+    font-size: 2rem;
+    text-align: center;
+    /* font-family: 'Cantarell', sans-serif; */
+}
+h2{
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 700;
+}
+h3{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 18px;
+}
+
+button{
+    color: rgba(202, 250, 234);
+    padding: 23px;
+    font-size: 1.3rem;
+    border: 2px solid rgb(202, 250, 234);
+    border-radius: 20px;
+    background-color: transparent;
+    margin: 20px auto;
+    line-height: 20px;
+    cursor: pointer;
+    font-weight: 700;
+
+}
+@media (min-width:800px) 
+{
+    #idx-atf>div{
+        height: 18vh;
+    }
+h1{
+    font-size: 3rem;
+}
+h3{
+    margin-top: .3rem;
+}
+}
+ 

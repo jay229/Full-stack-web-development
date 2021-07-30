@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 3vw;
+}
+html,body{
+    height: 100%;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    border: 10px groove greenyellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+form,input{
+    font-size: 1rem;
+}
+label{
+    width: 33%;
+}
+input{
+    width: 66%;
+}
+.btn{
+    justify-content: flex-end;
+}
+#sbmt{
+    border: 1px solid black;
+    font-size: .7rem;
+    background-color: #fff;
+    padding: .2rem .4rem;
+    border-radius: .5rem;
+    margin-top: .8rem;
+}
+#sbmt:hover{
+    background-color: green;
+    color: #fff;
+}

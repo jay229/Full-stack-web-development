@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 0; */
+    box-sizing: border-box;
+}
+html{
+    font-size: 1vw;
+    color: rgb(138, 134, 134);
+}
+#atf{
+    height: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 7rem;
+    text-align: center;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+#topbdr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12rem;
+    width: 95%;
+    border-top: 2px solid grey;
+}
+#ftr-spnr,#ftr-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+span{
+    margin-left: 1rem;
+}
+button{
+    font-size: 4rem;
+    /* border-radius: 4px solid red    ; */
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+#reset{
+    background-color: white;
+    color: #4bbebb;
+}
+#save{
+    color: #fff;
+    background-color: #4bbebb;
+    margin-left: 1rem;
+}
+.icon{
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    /* border: 2px solid red; */
+    /* padding: 20px 0 5px 12px ; */
+    font-size: 2rem;
+}
+.icon-spinner{
+    animation-name: spinner;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes spinner{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

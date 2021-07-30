@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form tutorial</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <form action="/" method="post">
+        <div>
+            <label for="f_name">First Name:</label>
+            <input type="text" name="f_name" id="f_name" required>
+        </div>
+        <div>
+            <label for="mail">Email:</label>
+            <input type="email" name="mail" id="mail" required>
+        </div>
+        <div>
+            <label for="rng">Satisfaction:</label>
+           <input type="range" name="range" id="rng" max="10" value="9">
+        </div>
+        <div class="btn">
+            <input type="submit" value="Submit"id="sbmt">
+        </div>
+    </form>
+    <h1></h1>
+    <script>
+        var r=document.querySelector("#rng");
+        var out=document.querySelector("h1")
+        // console.log(r,out);
+        out.innerText=r.valueAsNumber;
+        r.addEventListener('input',function(){
+            out.innerText=r.valueAsNumber;
+        });
+    </script>
+</body>
+</html>

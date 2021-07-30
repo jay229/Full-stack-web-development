@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <SCRipt>
+        if(true)
+        {
+            var i=10;
+            document.write(i+"<br>");//It is accessible form the outside of scope.
+        }
+        document.write(i+"<br>");//like this
+
+
+        if(true)
+        {
+            let j=20;
+            document.write(j+"<br>");//It isn't accessible form the outside of scope.
+        }
+        document.write(j+"<br>");//like this
+
+        
+    </SCRipt>
+</body>
+</html>

@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+  border-radius: 100%;
+  position: relative;
+  /* top: 10px; */
+  left: 0;
+  animation-name: circle;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease;
+}
+@keyframes circle {
+  0% {
+    /* position: relative; */
+    /* top: 10px; */
+    left: 0;
+    /* border-radius: 50%; */
+}
+100% {
+    /* position: relative; */
+    /* border-radius: 10%; */
+    /* top: 10px; */
+    left: 100%;
+  }
+}

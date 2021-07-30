@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.atf{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.nav{
+    margin-top: 30px;
+    height: 80px;
+    border-bottom:2px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 2px solid blue; */
+}
+button{
+    border: 0;
+    width: 150px;
+    height: 75px;
+    padding: 10px;
+    /* margin-bottom: 10px; */
+    font-size: 2rem;
+    background-color: transparent;
+    
+}
+button:hover{
+    border-bottom: 3px solid blue;
+    transition: .4s;
+}

@@ -1,0 +1,40 @@
+div{
+    width: 200px;
+    height: 200px;
+    border: 3PX SOLID red;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+.div1{
+    text-align: center;
+    background-color: red;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.div2{
+    text-align: center;
+    background-color: rgb(44, 13, 131);
+    margin-top: 10px;
+
+    /* Transition properties */
+    transition-property: background-color;
+    transition-duration: 3s;
+    /* transition-timing-function's keyword values */
+    /* transition-timing-function: linear; */
+    /* transition-timing-function: ease; */
+    /* transition-timing-function: ease-in; */
+    /* transition-timing-function: ease-out; */
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s;
+}
+.div1:hover{
+    background-color: blue;
+}
+.div2:hover{
+    background-color: red;
+}
+

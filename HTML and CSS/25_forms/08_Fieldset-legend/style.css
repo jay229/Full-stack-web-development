@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 3vw;
+}
+body{
+    height: 100vh;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+
+}
+form{
+    border: 10px groove greenyellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* width: 100%; */
+    padding: 20px;
+}
+fieldset{
+    display: flex;
+    justify-content: space-between;
+}
+form,input{
+    font-size: 1rem;
+}
+#f-btn{
+    /* align-items: center; */
+    justify-content: flex-end;
+    width: 100%;
+}
+#btn{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: .5rem .7rem .5rem;
+    padding: .2rem .4rem;
+    font-size: .5rem;
+    
+}
+#btn:hover{
+    background-color: greenyellow;
+}

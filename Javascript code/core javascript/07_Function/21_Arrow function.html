@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+<body>
+    <script>
+        // Arrow function:It is an anonymous function .It has shorter syntax compared to function expression.
+        // syntax
+        // var myfun=()=>{
+        //     document.writeln("I'm arrow function");
+        // }
+        // myfun();
+
+        // function with no argument
+        // var myfun=()=>{
+        //     document.writeln("I'm arrow function");
+        // }
+        // myfun();
+        
+        // function with argument
+            // var x=10;
+            // var sqr=(y)=>{
+            //     document.writeln(y*y);
+            // }
+            // sqr(x);
+
+
+            // default parameter
+            // var x=10;
+            // var sqr=(y=5)=>{
+            //     document.writeln(y*y);
+            // }
+            // sqr();
+
+
+            // rest parameter
+            var x=10;
+            var sqr=(y,...z)=>{
+                document.writeln(y*z);
+            }
+            sqr(x,10);
+
+    </script>
+</body>
+</html>

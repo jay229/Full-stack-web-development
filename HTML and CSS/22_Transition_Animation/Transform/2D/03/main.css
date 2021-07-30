@@ -1,0 +1,15 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    width: 200px;
+    height: 150px;
+    background-color: tomato;
+    transform-origin: top left;
+    transform: rotate(30deg);
+    font-weight: 900;
+    text-align: center;
+}

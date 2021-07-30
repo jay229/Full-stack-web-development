@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 120px;
+    height: 120px;
+    border: 2px solid red;
+    line-height: 120px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    animation-name: card;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+
+}
+@keyframes card{
+    0%{
+        border-radius: 0%;
+    }
+    20%{
+        border-radius: 10%;
+        background-color: teal;
+    }
+    40%{
+        border-radius: 20%;
+        background-color: green;
+    }
+    60%{
+        border-radius: 30%;
+        background-color: blue;
+    }
+    80%{
+        border-radius: 40%;
+        background-color: yellow;
+
+    }
+    100%{
+        border-radius: 50%;
+        background-color: red;
+        color: white;
+
+    }
+
+}

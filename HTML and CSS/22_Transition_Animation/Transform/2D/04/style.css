@@ -1,0 +1,9 @@
+.card{
+    width: 150px;
+    height: 100px;
+    background-color: tomato;
+    /* transform: translateX(100px); */
+    /* transform: translateY(100px); */
+    transform: translate(20px,40px);
+    /* z-index: -1; */
+}

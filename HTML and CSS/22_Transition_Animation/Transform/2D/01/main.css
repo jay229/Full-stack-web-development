@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    width: 100px;
+    height: 150px;
+    background-color: tomato;
+    /* transform: rotate(60deg); */
+    transform: rotate(360deg);
+    /* transform-origin: bottom; */
+    font-weight: 900;
+    text-align: center;
+}

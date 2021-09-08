@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append Node</title>
+</head>
+<body>
+    <div id="myid">
+        <h1 id="myh1">I am heading</h1>
+    </div>
+    <section id="mysec">
+
+    </section>
+    <script>
+        let tn=document.getElementById("myid");
+        // Create text node
+        let tnode=document.createTextNode("I am a text node");
+        // Append text node
+        tn.appendChild(tnode);
+        console.log(tn);
+
+
+    </script>
+</body>
+</html>

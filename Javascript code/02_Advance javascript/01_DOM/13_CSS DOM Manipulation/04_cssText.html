@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="myp" style="background-color: darkgrey; color:black;">Paragraph</p>
+    <script>
+        let p=document.getElementById("myp");
+        let cs=p.style;
+        // console.log(cs);
+        // console.log(cs.length);
+        // console.log(cs.cssText);
+        cs.cssText="background-color:red;font-size:2rem; color:white;";
+        console.log(p);
+    </script>
+</body>
+</html>

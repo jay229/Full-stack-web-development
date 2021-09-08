@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+    /* background-color: coral; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo-section{
+    display: flex;
+    align-items: center;
+}
+.search-block{
+    margin-left: 1.4rem;
+    border: 1px solid #d9dde7;
+    border-radius: 4px;
+    padding: 0.5rem 0.8rem;
+    display: flex;align-items: center;
+
+}
+nav input{
+    border: none;
+    min-width: 190px;
+}
+nav input:focus{
+    outline: none;
+}
+nav ul{
+    width: 100%;
+    background-color: whitesmoke;
+    text-align: center;
+    list-style-type: none;
+    margin-top: 1rem;
+    display: none;
+}
+nav ul li{
+    padding: 1rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #596172;
+}
+.show{
+    display: block;
+}
+.hero{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),url("../img/mobile-img.png");
+    min-height: calc(100vh-65px);
+    background-repeat: unset;
+    background-size: cover;
+    background-position: bottom;
+   
+
+}
+.hero_text-block{
+    margin: 0 auto;
+    width: 90%; 
+    color: white;
+}
+.home-emoji{
+    margin-top: 1rem;
+    /* border: 2px solid red; */
+    max-width: max-content;
+    /* padding: 1rem; */
+}
+.hero_text-block h1{
+    font-size: 2rem;
+    line-height: 1.3;
+    font-weight: 400;
+    margin-bottom: 1rem;
+
+}
+.search-block.search-block-hero input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: white;
+}
+.search-block.search-block-hero input:focus{
+    outline: none;
+}
+.hero ::placeholder{
+    color: white;
+}
+.search-block.search-block-hero{
+    margin-left: 0;
+    /* border: 2px solid red; */
+    width: 70%;
+}
+.hero_btn{
+    margin-top: 2rem;
+    /* border: 2px solid red; */
+   display: flex;
+   flex-wrap: wrap;
+
+}
+.btn{
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 0.4rem;
+    margin-right: 0.2rem;
+    padding:0.7rem 0.7rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+.btn_success{
+    background-color: #25df8f;
+}
+.btn_secondary{
+    background-color: #c1c8d7;
+}
+.apartments{
+    background-color: #f6f6f7;
+}
+.apartments .section-heading{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    width: 100%;
+
+}
+.apartments .section-heading h2{
+    font-weight: 400;
+    color: #28313d;
+    font-size: 1.2rem;
+
+}
+.apartments .section-heading h2 span{
+    color: #949fb7;
+}
+.apartments .section-heading a{
+    color: #596172;
+    font-size: 1rem;
+}
+.apartments-list-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+}
+section{
+    padding: 2rem 0;
+}
+.apartments-meta{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.apartments-meta span{
+    color: #596172;
+    font-size: 0.8rem;
+    padding-top: 0.4rem;
+}
+.apartments-card img{
+    width: 100%;
+}
+.apartments-title{
+    margin-top: 1rem;
+}
+.apartments-title a{
+    color: #28313d;
+    text-decoration: none;
+    line-height: 1.6;
+}
+.hero-img-block{
+    display: none;
+}
+
+
+
+/* Media query */
+
+@media (min-width:820px){
+    .hamburger{
+        display: none;
+    }
+    nav ul.nav-list{
+        width: auto;
+        /* border: 2px solid red; */
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+        padding: 0;
+        background-color: transparent;
+    }
+/* .container{
+        flex-wrap: nowrap;
+    } */
+    .hero_text-block h1{
+        width:60%;
+    }
+}
+@media (min-width:995px){
+    .hero{
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+    }
+    .hero_text-block{
+        width: 45%;
+        /* border: 2px solid red; */
+        margin-left: 5%;
+    }
+.hero-img-block {
+    display: block;
+    width: 55%;
+
+    /* border: 2px solid red; */
+}
+.hero-img-block img{
+    padding-left: 5.5rem;
+    width: 100%;
+    height: 100%;
+}
+.hero_text-block h1{
+   color: #28313d;
+   font-weight: 400;
+   width: 100%;
+   font-size: 3rem;
+}
+.search-block-hero  input::placeholder{
+    color: #28313d;
+}
+}

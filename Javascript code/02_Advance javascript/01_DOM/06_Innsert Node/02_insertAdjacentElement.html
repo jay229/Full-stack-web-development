@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Javascript Frameworks</h1>
+        <ul id="myul">
+            <li>Jquery</li>
+            <li id="myang">Angular js</li>
+            <li>React</li>
+            <li id="myd3">D3.js</li>
+        </ul>
+    </div>
+    <script>
+        // Get element reference 
+        let myang=document.getElementById("myang");
+
+        // Create new element
+        let Nelem=document.createElement("span");
+        Nelem.textContent="I am span ";
+
+        // insertAdjacentElement method
+        myang.insertAdjacentElement("beforebegin",Nelem);
+        myang.insertAdjacentElement("afterend",Nelem);
+        myang.insertAdjacentElement("afterbegin",Nelem);
+        myang.insertAdjacentElement("afterend",Nelem);
+    </script>
+</body>
+</html>

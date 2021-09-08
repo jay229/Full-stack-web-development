@@ -1,0 +1,43 @@
+$bg-color:#10ac84;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+@mixin flexproperty{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+@mixin contentprop($para1){
+    color:#222f3e;
+    font-size: 2rem + 3rem;
+   letter-spacing: $para1;
+}
+// Super power of SCSS
+// 1: Operator
+// 2: Variable
+// 3: Nesting
+// 4: Mixin
+header{
+    width: 100vw;
+    height: 100vh;
+    @include flexproperty;
+    background: $bg-color;
+    h1{
+       @include contentprop(1rem);
+        &:hover{
+            color: white;
+        }
+    }
+    // h1:hover{
+    //     color: white;
+    // }
+    p{
+        @include contentprop(0.5rem);
+    }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Access Method</title>
+</head>
+<body>
+    <p>Hello coders lets learn js concept</p>
+    <div>
+        <p>DOM</p>
+    </div>
+    <div>
+        <p>JS concept</p>
+    </div>
+    <script>
+        let tg=document.getElementsByTagName("p");
+        let len=tg.length;
+        for(let i=0;i<len;i++)
+        {
+            let result=document.getElementsByTagName("p")[i];
+            // console.log(result + "<br>");
+            console.log(result);
+        }
+    </script>
+</body>
+</html>

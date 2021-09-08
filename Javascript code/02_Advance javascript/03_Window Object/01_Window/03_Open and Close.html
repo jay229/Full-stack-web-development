@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Window open and close</h1>
+   
+    <button id="btn1">Close Twitter</button>
+
+    <script>
+        // window.open();//Open tab
+        // let newWindow=window.open();
+        // document.write(newWindow);//Object window
+
+        // let newWindow=window.open("https://www.twitter.com");
+        // let newWindow=window.open("https://www.twitter.com","_self"); open in same tab
+        
+       
+
+            let newWindow=window.open("https://www.twitter.com","_blank","width=400,height=400");
+          
+      
+        document.getElementById("btn1").addEventListener("click",function(){
+            // newWindow.close();
+            console.log(newWindow);
+        });
+
+
+    </script>
+    <script>
+
+    </script>
+</body>
+</html>

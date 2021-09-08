@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse events</title>
+    <style>
+        body{
+            height: 100vh;
+        }
+        #parent{
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #child{
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            color: black;
+            font-size: 1.5rem;
+            /* margin: 50px auto; */
+            text-align: center;
+            line-height: 200px;
+            font-weight: bold;
+            
+
+        }
+    </style>
+    
+    
+
+</head>
+<body>
+    <div id="parent">
+        <div id="child">
+            Mouse Events
+        </div>
+    </div>
+    <script>
+        let parent=document.getElementById("parent");
+        let child=document.getElementById("child");
+        let h1=document.getElementsByTagName("h1");
+        
+
+        function MouseDown()
+        {
+           child.textContent="Mouse Down";
+        }
+        function MouseUp()
+        {
+           child.textContent="Mouse Events";
+        }
+        function MouseClick()
+        {
+           child.textContent="Mouse click";
+           
+        }
+        function MouseDblClick()
+        {
+           child.textContent="Mouse Events";
+           
+        }
+        function MouseEnter()
+        {
+           child.textContent="Mouse Enter";
+           
+        }
+        function MouseLeave()
+        {
+           child.textContent="Mouse Leave";
+           
+        }
+        function MouseOver()
+        {
+           this.style.backgroundColor="black";
+           
+        }
+        function MouseOut()
+        {
+           this.style.backgroundColor="red";
+           
+        }
+        function MouseMove()
+        {
+           this.style.width="450px";
+           
+        }
+        function MouseRightClick()
+        {
+           this.style.width="400px";
+           
+        }
+        child.addEventListener("mousedown",MouseDown);
+        child.addEventListener("mouseup",MouseUp);
+        child.addEventListener("click",MouseClick);
+        child.addEventListener("dblclick",MouseDblClick);
+        child.addEventListener("mouseenter",MouseEnter);
+        child.addEventListener("mouseleave",MouseLeave);
+
+        parent.addEventListener("mouseover",MouseOver);
+        parent.addEventListener("mouseout",MouseOut);
+        parent.addEventListener("mousemove",MouseMove);
+        parent.addEventListener("contextmenu",MouseRightClick);
+
+
+    </script>
+</body>
+</html>

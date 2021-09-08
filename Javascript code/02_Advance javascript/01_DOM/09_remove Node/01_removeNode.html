@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geekyshows</title>
+  </head>
+  <body>
+    <ul id="myul">
+      <li>Item 1</li>
+      <li id="item2">Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+    <div id="mydiv"></div>
+    <script>
+      let myul = document.getElementById("myul");
+      let li = document.getElementById("item2");
+      //    let DelNode=myul.removeChild(li); remove with specifying Parent node
+    //   let DelNode=myul.removeChild(myul.childNodes[1]);remove without specifying child
+      let DelNode=li.parentNode.removeChild(li); //remove without specifying child
+    </script>
+  </body>
+</html>

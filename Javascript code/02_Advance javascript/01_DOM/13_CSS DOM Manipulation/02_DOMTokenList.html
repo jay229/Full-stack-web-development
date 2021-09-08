@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .class1{
+            background-color: blue;
+        }
+        .class2{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p id="para" class="class1 class3" style="font-size: 2rem;">Paragraph</p>
+
+    <script>
+        let p=document.getElementById("para");
+        // console.log(p);
+        // classList property
+        let elementClass=p.classList;
+        // console.log(elementClass);
+        // console.log(elementClass[0]);
+        // console.log(elementClass[1]);
+
+        // Length property
+        let len=elementClass.length;
+        // console.log(len);
+
+        // value property
+        let value=elementClass.value;
+        // console.log(value);
+
+        // item()
+        // console.log(elementClass.item(0));
+        // console.log(elementClass.item(1));
+
+        // add()
+        elementClass.add("class2");
+
+        // remove()
+        elementClass.remove("class1");
+        // console.log(elementClass.length);
+
+        // replace()
+        elementClass.replace("class3","class4");
+        // console.log(elementClass);
+        // contains()
+        let result=elementClass.contains("class4");
+        // console.log(result);
+
+        // toggle()
+        elementClass.toggle("class5");
+        console.log(elementClass);
+        elementClass.toggle("class5");
+        console.log(elementClass);
+    </script>
+</body>
+</html>

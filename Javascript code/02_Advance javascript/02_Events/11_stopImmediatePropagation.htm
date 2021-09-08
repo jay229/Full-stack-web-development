@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one{
+            width: 400px;
+            height: 400px;
+            background-color: green;
+            font-size: 1.2rem;
+        }
+        #two{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            font-size: 1.2rem;
+        }
+        #three{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            font-size: 1.2rem;
+        }
+        #four{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(48, 48, 43);
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="one">1
+        <div id="two">2
+            <div id="three">3
+               
+            </div>
+        </div>
+    </div>
+
+    <script>
+       function div1(e)
+       {
+           this.style.backgroundColor="red";
+           console.log(e.target);
+       }
+       function div2(e)
+       {
+           this.style.backgroundColor="white";
+           console.log(e.target);
+           e.stopImmediatePropagation();
+          
+        }
+        function div_2(e)
+        {
+          
+           this.style.width="450px";
+           console.log(e.target);
+       }
+       function div3(e)
+       {
+           this.style.backgroundColor="hotpink";
+           console.log(e.target);
+           e.stopPropagation();
+        }
+       
+       document.getElementById("one").addEventListener("click",div1,false);
+       document.getElementById("two").addEventListener("click",div2,false);
+       document.getElementById("two").addEventListener("click",div_2,false);
+       document.getElementById("three").addEventListener("click",div3,false);
+      
+    </script>
+</body>
+</html>

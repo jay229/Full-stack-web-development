@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head >
+        <title>Geekyshows</title>
+    </head>
+    <body>
+        <ul id="myul">
+            <li>Item 1</li>
+            <li id="item_2">Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>        
+        <span id="myspan">Span</span>
+        <script>
+       let ul=document.getElementById("myul");
+       let li=document.getElementById("item_2");
+       let newElem=document.createElement("li");
+       newElem.textContent="Item n";
+       ul.replaceChild(newElem,li);
+
+        </script>
+    </body>
+</html>
+

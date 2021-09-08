@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append Node</title>
+</head>
+<body>
+    <div id="myid">
+        <h1 id="myh1">I am heading</h1>
+    </div>
+    <section id="mysec">
+
+    </section>
+    <script>
+        // Target parent
+        let myid=document.getElementById("myid");
+
+        // Create element
+        let h2=document.createElement("h2");
+        let p=document.createElement("p");
+
+        // Assign text to element
+            h2.textContent="I am heading 2";
+            p.textContent="I am Paragraph";
+
+        // Create document fragment
+        let df=document.createDocumentFragment();
+
+        // Append element to Document fragment
+        df.appendChild(h2);
+        df.appendChild(p);
+        console.log(df);
+
+        // Move Document Fragment to Parent or container myid
+        myid.appendChild(df);
+        console.log(df);
+        console.log(myid);
+
+
+
+
+    </script>
+</body>
+</html>

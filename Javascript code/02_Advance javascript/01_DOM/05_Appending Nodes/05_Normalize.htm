@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append Node</title>
+</head>
+<body>
+    <div id="myid">
+        <h1 id="myh1">I am heading</h1>
+    </div>
+    <section id="mysec">
+
+    </section>
+    <script>
+    //   Target node
+    let myid=document.getElementById("myid");
+
+    // Create text node
+    myid.appendChild(document.createTextNode("I "));
+    myid.appendChild(document.createTextNode("am "));
+    myid.appendChild(document.createTextNode("Mritunjay"));
+
+    // Normalize text nodes
+    myid.normalize();
+
+    console.log(myid.childNodes);
+
+
+    </script>
+</body>
+</html>

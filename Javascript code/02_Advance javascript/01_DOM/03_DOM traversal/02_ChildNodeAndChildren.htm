@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html id="htm">
+    <head >
+        <title>Tree</title>
+    </head>
+    <body>
+        <h1 id="myid">
+            <!-- This is Comment --> We are Learning JS </h1>
+        <p  id="myid1">I am Paragraph</p>
+        <p  id="myid2">
+		<span>I am an span</span> I am Paragraph</p>
+		<script>
+            // let tag1=document.getElementsByTagName("html");
+            // console.log(tag1.childNodes);
+            // console.log(tag1.children);
+            // console.log(tag1);
+            
+            // let tag1=document.getElementById("htm");
+            // console.log(tag1.childNodes);
+            // console.log(tag1.children);
+            // console.log(tag1);
+
+            // let tag1=document.getElementById("myid");
+            // console.log(tag1.childNodes);
+            // console.log(tag1.children);
+
+            let tag1=document.getElementById("myid2");
+            console.log(tag1.childNodes);
+            console.log(tag1.children);
+            let len=tag1.childNodes.length;
+            for(let i=0;i<len;i++){
+                console.log(tag1.childNodes[i]);
+            }
+		</script>
+    </body>
+</html>
+

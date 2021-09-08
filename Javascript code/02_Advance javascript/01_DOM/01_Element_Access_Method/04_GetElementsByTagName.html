@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Access Method</title>
+</head>
+<body>
+    <h1>Element Access Method</h1>
+    <h2>GetElementsByTagname</h2>
+    <p id="First_para">Hello coders</p>
+    <p>Lets start your web dev journey</p>
+    <div>
+        <p id="p1">First <span> para</span> inside <span>div</span> </p>
+        <p>Second para inside div</p>
+    </div>
+
+    <script>
+        let getspan=document.getElementById("p1");
+        let tg=getspan.getElementsByTagName("span") ;
+        console.log(tg);
+    </script>
+</body>
+</html>

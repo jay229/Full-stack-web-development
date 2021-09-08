@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="myp" style="background-color: darkgrey; color:black;">Paragraph</p>
+    <script>
+        let p=document.getElementById("myp");
+       let cs=p.style;
+    //    length property
+       let len=cs.length;
+    //    console.log(len);
+
+    // iten()
+    // console.log(cs.item(1));
+
+    // getPropertyValue()
+    let propvalue=cs.getPropertyValue("color");
+    // console.log(propvalue);
+
+    // removeProperty()
+    cs.removeProperty("background-color");
+
+    // setProperty()
+    cs.setProperty("font-size","2rem", "important");
+    
+    // getPropertyPriority()
+    let pro=cs.getPropertyPriority("font-size");
+    // console.log(pro);
+
+    // window.getComputedStyle()
+    let gcs=window.getComputedStyle(p);
+    // This will show all inline, internal, external, browser default css
+    // console.log(gcs);
+
+     // This will show font-size value
+    console.log(gcs.fontSize);
+    </script>
+</body>
+</html>

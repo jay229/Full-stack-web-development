@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta "name"="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Creating Json object
+      // let jsonobj={
+      //     ""name"":"Mritunjay kumar tiwari",
+      //     "State":"Bihar",
+      //     "Profesion":"Web development"
+      // }
+      // document.write(jsonobj."name");
+      // Iterate in json object using for in
+      // for (let key in jsonobj) {
+      //     document.write(key + "  =  " + jsonobj[key] +"<br>");
+      // }
+
+      // Nested Json bject
+    //   let jsonobj = {
+    //     "name": "Mritunjay kumar tiwari",
+    //     "State": "Bihar",
+    //     "Profesion": "Web development",
+    //     "address": {
+    //       "Village": "Chanda",
+    //       "P.O.": "Gajrajganj",
+    //       "District": "Bhojpur",
+    //       "State": "Bihar",
+    //     },
+    //   };
+      //    document.write(jsonobj.address.District);
+      // JSON Array of Strings
+      //   let jsonarr=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+      //   for (let key in jsonarr ) {
+      //       document.write(jsonarr[key]+"<br>");
+      //   }
+
+      // JSON Array of Objects
+      let JsonArrObj = [
+        { "name": "Ram", "email": "ram@gmail.com", "age": 23 },
+        { "name": "Shyam", "email": "shyam23@gmail.com", "age": 28 },
+        { "name": "John", "email": "john@gmail.com", "age": 33 },
+        { "name": "Bob", "email": "bob32@gmail.com", "age": 41 },
+      ]
+      for (const key in JsonArrObj) {
+        document.write(JsonArrObj[key].name+"<br>");
+        document.write(JsonArrObj[key].email+"<br>");
+        document.write(JsonArrObj[key].age+"<br>");
+      }
+    </script>
+  </body>
+</html>

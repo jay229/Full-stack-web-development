@@ -5,10 +5,12 @@ export default function Textform(props) {
     const textChanged = () => {
         let newVar = text.toUpperCase();
         setText(newVar);
+        props.showAlert("Text is converted to uppercase","success");
     }
     const textChangedLower = () => {
         let newVar = text.toLowerCase();
         setText(newVar);
+        props.showAlert("Text is converted to lowercase","success");
     }
     const ClearText = () => {
         let newVar = "";
@@ -17,7 +19,9 @@ export default function Textform(props) {
     const CopyText = () => {
         let txt = document.getElementById("myBox");
         txt.select();
-        document.execCommand("copy");
+        navigator.clipboard.writeText(txt.value);
+        props.showAlert("Text is copied to clipboard","success");
+        // document.execCommand("copy");
 
     }
     const handleOnChange = (e) => {

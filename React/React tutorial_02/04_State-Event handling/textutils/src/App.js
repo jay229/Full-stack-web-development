@@ -8,15 +8,24 @@ import Textform from './components/Textform';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
+ 
 } from "react-router-dom";
 
 function App() {
 
+  // const rmClass=()=>{
+  //   document.body.classList.remove("bg-primary");
+  //   document.body.classList.remove("bg-danger");
+  //   document.body.classList.remove("bg-success");
+  //   document.body.classList.remove("bg-warning");
+  // }
 
   const [mode, setMode] = useState("light")
-  const toggleMode = () => {
+  const toggleMode = (cls) => {
+    // rmClass()
+    console.log(cls)
+    // document.body.classList.add("bg-"+cls);
     if (mode === "light") {
       setMode("dark");
       document.body.style.backgroundColor = "#042743";
@@ -56,13 +65,13 @@ function App() {
 
           <Switch>
             <Route exact path="/about">
-              <About />
+              <About mode={mode} />
             </Route>
 
             <Route exact path="/">
               <div className="container">
 
-              <Textform showAlert={showAlert} heading="Enter the Text to analize" mode={mode} />
+              <Textform showAlert={showAlert} heading="Try TextUtils-Word Counter, Character Counter" mode={mode} />
               </div>
             </Route>
           </Switch>

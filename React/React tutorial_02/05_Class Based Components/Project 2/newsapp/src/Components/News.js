@@ -2,23 +2,54 @@ import React, { Component } from 'react'
 import NewsItem from './NewsItem'
 
 export class News extends Component {
-   
+
     constructor() {
         super();
         // console.log("Hii");
         this.state = {
             articles: [],
-            loading: false
+            loading: false,
+            page: 1
         }
 
     }
-     async componentDidMount(){
-         let url="https://newsapi.org/v2/everything?domains=wsj.com&apiKey=a64092eee06b4808b7a20c9f8e14849d"
-         let data=await fetch(url);
-         let parseData=await data.json();
-         console.log(parseData);
-         this.setState({articles:parseData.articles})
-     }
+    async componentDidMount() {
+        let url = "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=a64092eee06b4808b7a20c9f8e14849d&page=1&pageSize=4"
+        let data = await fetch(url);
+        let parseData = await data.json();
+        //  console.log(parseData);
+        this.setState({ articles: parseData.articles , totalResults:parseData.totalResults})
+    }
+    nextPage = async () => {
+       if(this.state.page+1>(Math.ceil(this.totalResults/4)))
+       {
+        console.log("Hii")
+       }
+        else
+        {
+
+            let url = `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=a64092eee06b4808b7a20c9f8e14849d&page= ${this.state.page+1}&pageSize=4`;
+            let data = await fetch(url);
+            let parseData = await data.json();
+            this.setState(
+                {
+                    articles: parseData.articles,
+                    page:this.state.page+1
+                }
+            )
+        }
+    }
+    prevPage = async () => {
+        let url = `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=a64092eee06b4808b7a20c9f8e14849d&page= ${this.state.page-1}&pageSize=4`;
+        let data = await fetch(url);
+        let parseData = await data.json();
+        this.setState(
+            {
+                articles: parseData.articles,
+                page:this.state.page-1
+            }
+        )
+    }
     render() {
         return (
             <div className="container my-3" >
@@ -34,6 +65,10 @@ export class News extends Component {
 
                         }
                     )}
+                    <div className="container d-flex justify-content-between">
+                        <button disabled={this.state.page<=1} type="button" className="btn btn-dark" onClick={this.prevPage}>&larr;Previous</button>
+                        <button type="button" className="btn btn-dark" onClick={this.nextPage}>Next&rarr;</button>
+                    </div>
                 </div>
 
 

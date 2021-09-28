@@ -1,4 +1,10 @@
 import React, { Component } from 'react'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 
 export class NavBar extends Component {
     render() {
@@ -11,34 +17,33 @@ export class NavBar extends Component {
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent ">
-                            <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
+                            <ul className="navbar-nav me-auto mb-2 mb-lg-0  ">
+                                <li className="nav-iem">
+                                    <Link className="nav-link" aria-current="page" to="/general">
+                                    Home
+                                    </Link>
+                                </li>
+                                <li className="nav-iem">
+                                    <Link className="nav-link" aria-current="page" to="/Business">
+                                    Business
+                                    </Link>
+                                </li>
+
                                 <li className="nav-item">
-                                    <a className="nav-link " aria-current="page" href="/">Home</a>
+                                    <a className="nav-link" href="/entertainment">Entertainment</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/about">About</a>
+                                    <a className="nav-link" href="/health">Health</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/about">general</a>
+                                    <a className="nav-link" href="/science">Science</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/about">business</a>
+                                    <a className="nav-link" href="/sports">Sports</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/about">entertainment</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="/about">health</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="/about">science</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="/about">sports</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="/about">technology</a>
-                                </li>
+                                    <a className="nav-link" href="/technology">Technology</a>
+                                </li> 
 
 
                             </ul>

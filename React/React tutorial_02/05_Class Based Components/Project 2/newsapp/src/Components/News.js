@@ -67,7 +67,7 @@ export class News extends Component {
     render() {
         return (
             <div className="container my-3" >
-                <h1 className="text-center">NewsMonkey-Top Headlines</h1>
+                <h1 className="text-center" style={{margin:"25px 0"}}>NewsMonkey-Top Headlines</h1>
 
                 {this.state.loading && <Loader />}
                 <div className="row">

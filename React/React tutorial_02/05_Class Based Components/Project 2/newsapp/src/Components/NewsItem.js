@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export class NewsItem extends Component {
     render() {
         let { title, description, imageUrl, newsUrl, author, publishedAt,source } = this.props;
-        console.log(author);
+        // console.log(author);
         // console.log(imageUrl);
         return (
             <div>

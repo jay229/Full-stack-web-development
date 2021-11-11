@@ -1,0 +1,50 @@
+body{
+    background-color: pink;
+}
+.App{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-div{
+    width: 50vw;
+    height: max-content;
+    border: 2px solid whitesmoke;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 5px 8px 15px 5px rgba(0, 0, 0, 0.3);
+}
+.main-div h3{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.main-div button{
+    width: 50%;
+    margin: 0.7rem 25%;
+    background-color: pink;
+    /* margin-bottom: 0.8rem; */
+    border: 0;
+    height: 30px;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.data{
+    display: flex;
+    justify-content: flex-start;
+}
+.data img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+.data p{
+    margin-left: 10px;
+    padding-top: 5px;
+    /* border: 2px solid red; */
+}

@@ -1,8 +1,11 @@
 const express = require('express')
 const path = require('path')
 const app = express()
-app.set('view engine', 'hbs');
 const staticPath = path.join(__dirname, "../public")
+const tpath = path.join(__dirname, "../templates")
+app.set('view engine', 'hbs');
+app.set('views',tpath)
+
 app.use(express.static(staticPath))
 
 app.get('/', (req, res) => {

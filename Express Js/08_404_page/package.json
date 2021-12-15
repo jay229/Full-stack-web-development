@@ -1,0 +1,15 @@
+{
+  "name": "404page",
+  "version": "1.0.0",
+  "description": "Adding 404 page in static website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jay",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.2.0"
+  }
+}

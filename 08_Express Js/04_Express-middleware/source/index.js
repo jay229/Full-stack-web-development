@@ -6,7 +6,7 @@ const app = express()
 const staticPath = path.join(__dirname, "../public")
 app.use(express.static(staticPath))
 app.get('/', (req, res) => {
-    
+    // console.log("hii")
 
 }).listen(3000, () => {
     console.log("8000 is listening")

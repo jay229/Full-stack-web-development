@@ -61,7 +61,8 @@ app.get("/students/:id",async(req,res)=>{
     }
 })
 
-// 
+// patch method
+//update student record
 app.patch("/students/:id",async(req,res)=>{
     try {
         const _id=req.params.id
@@ -69,6 +70,16 @@ app.patch("/students/:id",async(req,res)=>{
         res.send(result)
     } catch (error) {
         res.send(error)
+    }
+})
+app.delete("/students/:id",async(req,res)=>{
+    try {
+        const _id=req.params.id
+        const result=await Student.findByIdAndDelete(_id)
+        res.send(result)
+    } catch (error) {
+        res.status(404).send(error)
+        
     }
 })
 app.listen(port, () => {

@@ -60,6 +60,17 @@ app.get("/students/:id",async(req,res)=>{
         
     }
 })
+
+// 
+app.patch("/students/:id",async(req,res)=>{
+    try {
+        const _id=req.params.id
+        const result=await Student.findByIdAndUpdate(_id,req.body,{new:true})
+        res.send(result)
+    } catch (error) {
+        res.send(error)
+    }
+})
 app.listen(port, () => {
     console.log(`Server is setup at ${port}`)
 })

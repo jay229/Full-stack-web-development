@@ -18,6 +18,9 @@ app.use(express.json())
 //     .catch((e)=>res.send(e))
 // })
 
+// POST method 
+// Push students record to database
+
 app.post("/students",async (req,res)=>{
     try {
         const student=new Student(req.body)
@@ -25,6 +28,36 @@ app.post("/students",async (req,res)=>{
         res.status(201).send(result)
     } catch (error) {
         res.status(400).send(e)
+    }
+})
+// GET method
+// Get students record from the database
+app.get("/students",async(req,res)=>{
+    try {
+        const result=await Student.find()    
+        res.send(result)
+    } catch (error) {
+        res.send(error)
+        
+    }
+    
+})
+
+// GET method
+// Get individual student record from the database
+app.get("/students/:id",async(req,res)=>{
+    try {
+        const _id=req.params.id
+        const result=await Student.findById(_id)
+        if(!result){
+            return res.status(404).send()
+        }
+        else{
+            res.send(result)
+        }
+    } catch (error) {
+        res.send(error)
+        
     }
 })
 app.listen(port, () => {

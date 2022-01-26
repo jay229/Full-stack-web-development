@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  {{>header}}
+  <body>
+   {{>navbar}}
+    <div class="container my-5 ">
+      <form action="/register" method="POST">
+        <div class="mb-10">
+          <label for="Inputname" class="form-label"  >Full name</label>
+          <input type="text" class="form-control" id="Inputname"  name="inputName"  >
+        </div>
+       <div class="mb-3">
+         <label for="InputEmail1" class="form-label"  >Email address</label>
+         <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" name="inputEmail" >
+       </div>
+       <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" id="male" checked>
+          <label class="form-check-label" for="male">
+            Male
+          </label>
+          
+       </div>
+       <div class="form-check">
+         <input class="form-check-input" type="radio" name="gender" id="female" >
+         <label class="form-check-label" for="female">
+           Female
+          </label>
+        </div>
+        <div class="mb-3">
+          <label for="InputUsername" class="form-label"  >User name</label>
+          <input type="text" class="form-control" id="InputUsername"  name="inputUser" >
+        </div>
+        <div class="mb-3">
+          <label for="InputPwd" class="form-label">Password</label>
+          <input type="password" class="form-control" id="InputPwd" name="password">
+       </div>
+        <div class="mb-3">
+          <label for="Inputcpwd" class="form-label">Confirm Password</label>
+          <input type="password" class="form-control" id="Inputcpwd" name="Cpassword">
+        </div>
+  
+        <button type="submit" class="btn btn-primary" value="register" >Submit</button>
+      </form>
+   </div>
+  
+  </body>  
+</html>

@@ -2,6 +2,8 @@ const express = require("express")
 const path = require("path")
 const hbs = require("hbs")
 const Register = require("./models/registration")
+const async = require("hbs/lib/async")
+const { render } = require("express/lib/response")
 // const async = require("hbs/lib/async")
 require("./db/conn")
 const app = express()
@@ -21,6 +23,9 @@ app.get("/", (req, res) => {
 })
 app.get("/register", (req, res) => {
     res.render("register")
+})
+app.get("/login", (req, res) => {
+    res.render("login")
 })
 app.post("/register", async (req, res) => {
     try {
@@ -52,6 +57,22 @@ app.post("/register", async (req, res) => {
     }
 
 
+})
+app.post("/login",async (req, res) => {
+    try {
+        const email=req.body.email
+        const password=req.body.password
+        const result=await Register.findOne({email})
+        if(password===result.password){
+
+            res.render("index")
+        }
+        else{
+            res.send("Invalid user name or password")
+        }
+    } catch (error) {
+        res.status(400).send("Invalid user name or password")
+    }
 })
 
 
